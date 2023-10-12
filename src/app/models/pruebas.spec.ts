@@ -22,7 +22,7 @@ describe('Pruebas aplicando jasmine', () => {
         it('Prueba de cambio de fecha, aplicando validaciones', ()=>{
             const fecha3 = new Fecha(8,2,1990);
             //ahora modificaremos el dia a 30 y no deberia ser posible
-            expect(fecha3.cambiarFecha(30,2,1990)).toBe(true);
+            expect(fecha3.cambiarFecha(30,2,1990)).toBe(false);
         })
         
         describe("Ejemplo de lanzamiento de error en Jasmine", () => {

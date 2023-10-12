@@ -5,7 +5,7 @@ export class Persona {
     private apellido: string;
     private fecha: Fecha;
 
-    constructor(
+    public constructor(
          nombre: string,
          apellido: string,
          fecha: Fecha
@@ -14,10 +14,10 @@ export class Persona {
         this.apellido=apellido;
         this.fecha=fecha;
     }
-    getNombreCompleto(): string {
+    public getNombreCompleto(): string {
         return `${this.nombre} ${this.apellido}`;
     }
-    getEdadActual(): number {
+    public getEdadActual(): number {
         return this.fecha.getEdad();
     }
     
